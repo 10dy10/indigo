@@ -25,8 +25,16 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <title>INDIGO</title>
     <style>
-        /* 기본스타일 */
+        /* 공통스타일 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        :root{font-family:'Noto Sans KR', sans-serif;font-size:14px;}
+        .wrap{overflow:hidden;}
         
+        /* 기본스타일 */
+        .container{max-width:2400px;margin:0 auto;padding:16px 18px;}
+        .main-banner .container,.work .container,.map .container{padding:16px 0;}
+        .main-title a{font-weight:300;font-size:26px;color:#3f51b5;}
+        .sec-title{font-weight:500;font-size:36px;color:#3f51b5;}
         
         /* 768px 이상 스타일 */
         @media (min-width:768px){
@@ -95,48 +103,48 @@
         <section class="section we-are">
             <div class="container">
                 <h2 class="sec-title">WE ARE</h2>
-                <p class="sec-txt">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, provident? Quia harum cum saepe ullam, odit, obcaecati, voluptas fugit maiores ad suscipit iste! Ut explicabo facere sapiente voluptates nihil enim.
-                    Iste pariatur quae ex veniam laboriosam. Expedita culpa ex facere voluptate magnam tempora quos. Qui aut reprehenderit consectetur nostrum expedita eveniet numquam minus eum recusandae sapiente aspernatur, in nisi architecto?
-                </p>
-                <ul class="sec-contents">
-                    <li>
-                        <div class="img-box">
-                            <a href="#">
-                                <i class="fa fa-home" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <h3 class="sec-sub-title"><a href="#">HOME</a></h3>
-                        <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique quo ex modi delectus vel officiis quia nulla saepe, nemo quod nesciunt temporibus vero assumenda porro veritatis magni quaerat distinctio!</a></p>
-                    </li>
-                    <li>
-                        <div class="img-box">
-                            <a href="#">
-                                <i class="fa fa-users" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <h3 class="sec-sub-title"><a href="#">WE ARE</a></h3>
-                        <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique quo ex modi delectus vel officiis quia nulla saepe, nemo quod nesciunt temporibus vero assumenda porro veritatis magni quaerat distinctio!</a></p>
-                    </li>
-                    <li>
-                        <div class="img-box">
-                            <a href="#">
-                                <i class="fa fa-columns" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <h3 class="sec-sub-title"><a href="#">WORK</a></h3>
-                        <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique quo ex modi delectus vel officiis quia nulla saepe, nemo quod nesciunt temporibus vero assumenda porro veritatis magni quaerat distinctio!</a></p>
-                    </li>
-                    <li>
-                        <div class="img-box">
-                            <a href="#">
-                                <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <h3 class="sec-sub-title"><a href="#">BLOG</a></h3>
-                        <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique quo ex modi delectus vel officiis quia nulla saepe, nemo quod nesciunt temporibus vero assumenda porro veritatis magni quaerat distinctio!</a></p>
-                    </li>
-                </ul>
+                <div class="sec-contents">
+                    <p class="sec-txt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, provident? Quia harum cum saepe ullam, odit, obcaecati, voluptas fugit maiores ad suscipit iste! Ut explicabo facere sapiente voluptates nihil enim.
+                        Iste pariatur quae ex veniam laboriosam. Expedita culpa ex facere voluptate magnam tempora quos. Qui aut reprehenderit consectetur nostrum expedita eveniet numquam minus eum recusandae sapiente aspernatur, in nisi architecto?
+                    </p>
+                </div>
+                <div class="sec-contents we-link">
+                    <div class="img-box">
+                        <a href="#">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <h3 class="sec-sub-title"><a href="#">HOME</a></h3>
+                    <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique quo ex modi delectus vel officiis quia nulla saepe, nemo quod nesciunt temporibus vero assumenda porro veritatis magni quaerat distinctio!</a></p>
+                </div>
+                <div class="sec-contents we-link">
+                    <div class="img-box">
+                        <a href="#">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <h3 class="sec-sub-title"><a href="#">WE ARE</a></h3>
+                    <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique quo ex modi delectus vel officiis quia nulla saepe, nemo quod nesciunt temporibus vero assumenda porro veritatis magni quaerat distinctio!</a></p>
+                </div>
+                <div class="sec-contents we-link">
+                    <div class="img-box">
+                        <a href="#">
+                            <i class="fa fa-columns" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <h3 class="sec-sub-title"><a href="#">WORK</a></h3>
+                    <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique quo ex modi delectus vel officiis quia nulla saepe, nemo quod nesciunt temporibus vero assumenda porro veritatis magni quaerat distinctio!</a></p>
+                </div>
+                <div class="sec-contents we-link">
+                    <div class="img-box">
+                        <a href="#">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <h3 class="sec-sub-title"><a href="#">BLOG</a></h3>
+                    <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique quo ex modi delectus vel officiis quia nulla saepe, nemo quod nesciunt temporibus vero assumenda porro veritatis magni quaerat distinctio!</a></p>
+                </div>
             </div>
         </section>
         <hr class="sec-line">
