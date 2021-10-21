@@ -20,31 +20,22 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- 공통스타일 -->
+    <link rel="stylesheet" href="./css/default.css">
+    <!-- 반응형 헤더스타일 -->
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- 반응형 섹션 스타일 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 반응형 푸터 스타일 -->
+    <link rel="stylesheet" href="./css/footer.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- 슬라이더 -->
+    <script src="./js/slider.js"></script>
+    <!-- 네비게이션 -->
+    <script src="./js/call-nav.js"></script>
     <title>INDIGO</title>
-    <style>
-        /* 공통스타일 */
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-        :root{font-family:'Noto Sans KR', sans-serif;font-size:14px;}
-        .wrap{overflow:hidden;}
-        
-        /* 기본스타일 */
-        .container{max-width:2400px;margin:0 auto;padding:16px 18px;}
-        .main-banner .container,.work .container,.map .container{padding:16px 0;}
-        .main-title a{font-weight:300;font-size:26px;color:#3f51b5;}
-        .sec-title{font-weight:500;font-size:36px;color:#3f51b5;}
-        
-        /* 768px 이상 스타일 */
-        @media (min-width:768px){
-
-        }
-        /* 1200px 이상 스타일 */
-        @media (min-width:1200px){
-
-        }
-    </style>
 </head>
 <body>
     <section class="wrap">
@@ -55,7 +46,7 @@
                     <a href="./index.html">INDIGO</a>
                     </strong>
                 </h1>
-                <div class="btn-nav">
+                <div class="btn-nav" id="call-nav">
                     <span>라인</span>
                     <span>라인</span>
                     <span>라인</span>
@@ -106,7 +97,6 @@
                 <div class="sec-contents">
                     <p class="sec-txt">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, provident? Quia harum cum saepe ullam, odit, obcaecati, voluptas fugit maiores ad suscipit iste! Ut explicabo facere sapiente voluptates nihil enim.
-                        Iste pariatur quae ex veniam laboriosam. Expedita culpa ex facere voluptate magnam tempora quos. Qui aut reprehenderit consectetur nostrum expedita eveniet numquam minus eum recusandae sapiente aspernatur, in nisi architecto?
                     </p>
                 </div>
                 <div class="sec-contents we-link">
@@ -116,7 +106,7 @@
                         </a>
                     </div>
                     <h3 class="sec-sub-title"><a href="#">HOME</a></h3>
-                    <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique quo ex modi delectus vel officiis quia nulla saepe, nemo quod nesciunt temporibus vero assumenda porro veritatis magni quaerat distinctio!</a></p>
+                    <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. </a></p>
                 </div>
                 <div class="sec-contents we-link">
                     <div class="img-box">
@@ -125,7 +115,7 @@
                         </a>
                     </div>
                     <h3 class="sec-sub-title"><a href="#">WE ARE</a></h3>
-                    <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique quo ex modi delectus vel officiis quia nulla saepe, nemo quod nesciunt temporibus vero assumenda porro veritatis magni quaerat distinctio!</a></p>
+                    <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor temporibus vero assumenda porro </a></p>
                 </div>
                 <div class="sec-contents we-link">
                     <div class="img-box">
@@ -134,7 +124,7 @@
                         </a>
                     </div>
                     <h3 class="sec-sub-title"><a href="#">WORK</a></h3>
-                    <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique quo ex modi delectus vel officiis quia nulla saepe, nemo quod nesciunt temporibus vero assumenda porro veritatis magni quaerat distinctio!</a></p>
+                    <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. </a></p>
                 </div>
                 <div class="sec-contents we-link">
                     <div class="img-box">
@@ -143,7 +133,7 @@
                         </a>
                     </div>
                     <h3 class="sec-sub-title"><a href="#">BLOG</a></h3>
-                    <p class="sec-sub-txt"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique quo ex modi delectus vel officiis quia nulla saepe, nemo quod nesciunt temporibus vero assumenda porro veritatis magni quaerat distinctio!</a></p>
+                    <p class="sec-sub-txt"><a href="#">temporibus vero assumenda porro veritatis magni quaerat distinctio!</a></p>
                 </div>
             </div>
         </section>
@@ -259,7 +249,7 @@
                     </div>
                     <div class="sec-text">
                         <h3 class="sec-sub-title">2021-10-01</h3>
-                        <p class="sec-sub-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repellendus ipsa reprehenderit consequatur, veniam nemo est rem necessitatibus molestiae voluptatum atque exercitationem vitae magni laboriosam delectus dolor eaque praesentium harum?</p>
+                        <p class="sec-sub-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                     </div>
                 </div>
                 <div class="sec-contents b2">
@@ -268,7 +258,7 @@
                     </div>
                     <div class="sec-text">
                         <h3 class="sec-sub-title">2021-10-05</h3>
-                        <p class="sec-sub-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repellendus ipsa reprehenderit consequatur, veniam nemo est rem necessitatibus molestiae voluptatum atque exercitationem vitae magni laboriosam delectus dolor eaque praesentium harum?</p>
+                        <p class="sec-sub-txt">Lorem ipsum dolor elit. Officia repellendus ipsa reprehenderit consequatur </p>
                     </div>
                 </div>
                 <div class="sec-contents b3">
@@ -277,11 +267,12 @@
                     </div>
                     <div class="sec-text">
                         <h3 class="sec-sub-title">2021-10-11</h3>
-                        <p class="sec-sub-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repellendus ipsa reprehenderit consequatur, veniam nemo est rem necessitatibus molestiae voluptatum atque exercitationem vitae magni laboriosam delectus dolor eaque praesentium harum?</p>
+                        <p class="sec-sub-txt">Officia repellendus ipsa reprehenderit consequatur, veniam nemo est rem </p>
                     </div>
                 </div>
             </div>
         </section>
+        <hr class="sec-line">
         <section class="section contact">
             <div class="container">
                 <h2 class="sec-title">CONTACT</h2>
@@ -300,7 +291,7 @@
             <div class="container">
                 <h2 class="sec-title">찾아오시는 길</h2>
                 <div class="sec-contents">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.5061885823857!2d126.67717741161647!3d37.543136266304906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7e16f11f3635%3A0xd3d8fb87825f4f2a!2z7Jew7Z2s7KeB7JeF7KCE66y47ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1634717206780!5m2!1sko!2skr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.5061885823857!2d126.67717741161647!3d37.543136266304906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7e16f11f3635%3A0xd3d8fb87825f4f2a!2z7Jew7Z2s7KeB7JeF7KCE66y47ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1634717206780!5m2!1sko!2skr" loading="lazy"></iframe>
                 </div>
             </div>
         </section>
@@ -313,18 +304,28 @@
         </footer>
     </section>
 
-    <script>
-        $(function(){
-            // main slider
-            const swiper = new Swiper('.swiper',{
-                direction: 'horizontal',
-                loop: true,
-                pagination:{
-                    el:'.swiper-pagination',
-                    type:'bullets',
-                },
-            });
-        })
-    </script>
-</body>
+        <!-- // work hover
+            // $('.work .sec-contents').on({
+            //     'mouseenter':function(){
+            //         $(this).children('.background').css({
+            //             transition:'0.3s',
+            //             backgroundColor:'rgba(63, 81, 181, 0.6)',
+            //         });
+            //         $(this).children('.sec-text').css({
+            //             transition:'0.3s',
+            //             transform:'translateY(0)'
+            //         });
+            //     },
+            //     'mouseleave':function(){
+            //         $(this).children('.background').css({
+            //             transition:'0.3s',
+            //             backgroundColor:'rgba(63, 81, 181, 0)',
+            //         });
+            //         $(this).children('.sec-text').css({
+            //             transition:'0.3s',
+            //             transform:'translateY(-100%)'
+            //         });
+            //     },
+            // }); -->
+    </body>
 </html>
