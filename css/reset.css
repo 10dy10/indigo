@@ -2,7 +2,7 @@
 
 html,body,div,span,ol,ul,li,input,form,label,select,button,
 h1,h2,h3,h4,h5,h6,p,table,tr,td,img,a,iframe,strong,section,header,footer,nav,address,main,
-picture,video,audio,figure,figcaption,head,aside,article,source,::before,::after{
+picture,video,audio,figure,figcaption,head,aside,article,source,::before,::after,hr,textarea{
     box-sizing:border-box;
     margin:0;
     border:none;
@@ -22,4 +22,10 @@ h1,h2,h3,h4,h5,h6{
 }
 ul,ol,li{
     list-style:none;
+}
+address,i{
+    font-style:normal;
+}
+strong,b{
+    font-weight:400;
 }
